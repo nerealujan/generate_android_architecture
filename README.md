@@ -64,7 +64,7 @@ Automatiza y optimiza la configuración de proyectos Android con este script, di
 1. **Ejecuta el script principal**:
 
    ```bash
-   python main.py
+   python3 main.py
    ```
 2. **Sigue el menú interactivo para**:
    - **Introduce la ruta del proyecto y el nombre del paquete**:
