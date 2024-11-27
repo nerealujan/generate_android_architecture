@@ -85,140 +85,95 @@ def show_dependencies(use_compose):
                 ]
             },
             6: {
-                "WorkManager": [
-                    "androidx.work:work-runtime-ktx:2.8.0",
-                ]
-            },
-            7: {
-                "Timber": [
-                    "com.jakewharton.timber:timber:5.0.1",
-                ]
-            },
-            8: {
                 "ConstraintLayout": [
                      "androidx.constraintlayout:constraintlayout-compose:1.0.1"
                 ] if use_compose else [ 
                      "androidx.constraintlayout:constraintlayout:2.1.3",]
             },
-            9: {
-                "Jetpack Compose": [
-                    "androidx.compose.ui:ui:1.5.3",
-                    "androidx.compose.material:material:1.5.3",
-                ] if use_compose else [],
-            },
-            10: {
+            7: {
                 "Testing JUnit": [
                     "junit:junit:4.13.2",
-                    "androidx.test.ext:junit:1.1.3",
                 ]
             },
-            11: {
+            8: {
                 "JUnit 5": [
                     "org.junit.jupiter:junit-jupiter-api:5.10.0",
                     "org.junit.jupiter:junit-jupiter-engine:5.10.0",
                 ]
             },
-            12: {
-                "Navigation Safe Args": [
-                    "androidx.navigation:navigation-safe-args-gradle-plugin:2.7.3",
-                    "androidx.navigation:navigation-fragment-ktx:2.7.3",
-                    "androidx.navigation:navigation-ui-ktx:2.7.3",
-                ]
-            },
-            13: {
+            9: {
                 "Firebase": [
                     "com.google.firebase:firebase-bom:29.0.0",
                     "com.google.firebase:firebase-analytics-ktx",
                 ]
             },
-            14: {
+            10: {
                 "Retrofit": [
                     "com.squareup.retrofit2:retrofit:2.9.0",
                 ]
             },
-            15: {
-                "Material Design Icons": [
-                    "com.google.android.material:material-icons-extended:1.9.0",
-                ]
-            },
-            16: {
+            11: {
                 "Dagger": [
                     "com.google.dagger:hilt-android:2.47",
                     "com.google.dagger:hilt-compiler:2.47",
                     "com.google.dagger:hilt-android-testing:2.47"
                 ]
             },
-            17: {
+            12: {
                 "MockK": [
                     "io.mockk:mockk:1.13.5",
                     "io.mockk:mockk-android:1.13.3",
                     ]
             },
-            18: {
+            13: {
                 "Mockito": [
                     "org.mockito:mockito-core:4.11.0",
                     "org.mockito.kotlin:mockito-kotlin:4.1.0",
                     "org.mockito:mockito-android:4.11.0"
                 ]
             },
-            19: {
-                "JetBrains Annotations": [
-                    "org.jetbrains:annotations:24.0.1",
-                ]
-            },
-            20: {
+            14: {
                 "Espresso": [
-                    "androidx.test.espresso:espresso-core:3.5.1",
                     "androidx.test.espresso:espresso-contrib:3.5.1",
                     "androidx.test.espresso:espresso-intents:3.5.1",
                 ]
             },
-            21: {
-                 "Kotlin Test": [
-                    "org.jetbrains.kotlin:kotlin-test:1.9.0"
-                ]
-            },
-            22: {
+            15: {
                  "Moshi": [
                     "com.squareup.moshi:moshi-kotlin:1.15.0"
                 ]
             },
-            23: {
+            16: {
                  "Gson": [
                     "com.google.code.gson:gson:2.10"
                 ]
             },
-            24: {
+            17: {
                  "Ktor Client": [
                     "io.ktor:ktor-client-android:2.3.3" 
                 ]
             },
-            25: {
+            18: {
                  "ViewPager2": [
                     "androidx.viewpager2:viewpager2:1.1.0"
                  ]
             },
-            26: {
-                 "DataStore":[
-                    "androidx.datastore:datastore-preferences:1.0.0"
-                ]
-            },
-            28: {
+            19: {
                  "Secure Preferences":[
                     "com.scottyab:secure-preferences-lib:0.1.4"
                 ]
             },
-            29: {
+            20: {
                  "Coil":[
                     "io.coil-kt:coil:2.4.0"
                 ]
             },
-            30: {
+            21: {
                  "Lottie":[
                     "com.airbnb.android:lottie:6.0.0"
                 ]
             },
-            31: {
+            22: {
                  "Crashlytics":[
                     "com.google.firebase:firebase-crashlytics-ktx"
                 ]
