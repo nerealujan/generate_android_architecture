@@ -1,5 +1,6 @@
 import os
 from generate_android_architecture import *
+from generate_dependencies import *
 
 def main() -> None:
     """Punto de entrada del script."""
@@ -95,8 +96,9 @@ def show_dependencies(use_compose):
             },
             8: {
                 "ConstraintLayout": [
-                    "androidx.constraintlayout:constraintlayout:2.1.3",
-                ]
+                     "androidx.constraintlayout:constraintlayout-compose:1.0.1"
+                ] if use_compose else [ 
+                     "androidx.constraintlayout:constraintlayout:2.1.3",]
             },
             9: {
                 "Jetpack Compose": [
@@ -130,9 +132,8 @@ def show_dependencies(use_compose):
                 ]
             },
             14: {
-                "Retrofit Converters": [
+                "Retrofit": [
                     "com.squareup.retrofit2:retrofit:2.9.0",
-                    "com.squareup.retrofit2:converter-moshi:2.9.0",
                 ]
             },
             15: {
@@ -141,120 +142,85 @@ def show_dependencies(use_compose):
                 ]
             },
             16: {
-                "Anko": [
-                    "org.jetbrains.anko:anko:0.10.8",
+                "Dagger": [
+                    "com.google.dagger:hilt-android:2.47",
+                    "com.google.dagger:hilt-compiler:2.47",
+                    "com.google.dagger:hilt-android-testing:2.47"
                 ]
             },
             17: {
-                "Dagger": [
-                    "com.google.dagger:hilt-android:2.47",
-                    "kapt com.google.dagger:hilt-compiler:2.47",
-                ]
-            },
-            18: {
                 "MockK": [
                     "io.mockk:mockk:1.13.5",
                     "io.mockk:mockk-android:1.13.3",
                     ]
             },
-            19: {
+            18: {
                 "Mockito": [
                     "org.mockito:mockito-core:4.11.0",
                     "org.mockito.kotlin:mockito-kotlin:4.1.0",
-                    "org.mockito:mockito-android:4.11.0",
-                    "org.mockito:mockito-inline:4.11.0"
+                    "org.mockito:mockito-android:4.11.0"
                 ]
             },
-            20: {
+            19: {
                 "JetBrains Annotations": [
                     "org.jetbrains:annotations:24.0.1",
                 ]
             },
-            21: {
+            20: {
                 "Espresso": [
                     "androidx.test.espresso:espresso-core:3.5.1",
                     "androidx.test.espresso:espresso-contrib:3.5.1",
                     "androidx.test.espresso:espresso-intents:3.5.1",
                 ]
             },
-            22: {
-                "Robolectric": [
-                    "org.robolectric:robolectric:4.9",
-                ]
-            },
-            23: {
-                "Hamcrest": [
-                    "org.hamcrest:hamcrest:2.2",
-                ]
-            },
-            24: {
+            21: {
                  "Kotlin Test": [
                     "org.jetbrains.kotlin:kotlin-test:1.9.0"
                 ]
             },
-            25: {
+            22: {
                  "Moshi": [
                     "com.squareup.moshi:moshi-kotlin:1.15.0"
                 ]
             },
-            26: {
+            23: {
                  "Gson": [
                     "com.google.code.gson:gson:2.10"
                 ]
             },
-            27: {
+            24: {
                  "Ktor Client": [
                     "io.ktor:ktor-client-android:2.3.3" 
                 ]
             },
-            28: {
+            25: {
                  "ViewPager2": [
                     "androidx.viewpager2:viewpager2:1.1.0"
                  ]
             },
-            29: {
+            26: {
                  "DataStore":[
                     "androidx.datastore:datastore-preferences:1.0.0"
                 ]
             },
-            30: {
-                 "Tink":[
-                    "com.google.crypto.tink:tink-android:1.7.0"
-                ]
-            },
-            31: {
+            28: {
                  "Secure Preferences":[
                     "com.scottyab:secure-preferences-lib:0.1.4"
                 ]
             },
-            32: {
+            29: {
                  "Coil":[
                     "io.coil-kt:coil:2.4.0"
                 ]
             },
-            33: {
+            30: {
                  "Lottie":[
                     "com.airbnb.android:lottie:6.0.0"
                 ]
             },
-            34: {
+            31: {
                  "Crashlytics":[
                     "com.google.firebase:firebase-crashlytics-ktx"
-                ]
-            },
-            35: {
-                 "LeakCanary":[
-                    "com.squareup.leakcanary:leakcanary-android:2.10"
-                ]
-            },
-            36: {
-                 "Kotlin Reflect":[
-                    "org.jetbrains.kotlin:kotlin-reflect:1.9.0"
-                ]
-            },
-            37: {
-                 "Hilt Testing":[
-                    "com.google.dagger:hilt-android-testing:2.47"
                 ]
             },
         }
